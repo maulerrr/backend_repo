@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <form action="getUsers" method="get">
+        <button type="submit">Get all users</button>
+        <div name="results"></div>
+    </form>
+    <form action="deleteUser" method="post">
+        <input type="text" name="userData" id="userData" placeholder="User Identificator">
+        <button type="submit">Delete</button>
+    </form>
+    <form action="updateUser" method="post">
+        <input type="text" name="selectUser" id="selectUser" placeholder="Old Data">
+        <input type="text" name="newData" id="newData" placeholder="New Data">
+        <button type="submit">Update</button>
+    </form>
+    <form action="createUser" method="post">
+        <input type="email" name="email" id="email" placeholder="email">
+        <input type="text" name="username" id="username" placeholder="username">
+        <input type="password" name="password" id="password" placeholder="password">
+        <button type="submit">Create</button>
+    </form>
+</body>
+</html>
+
+<style>
+    *{
+        font-family: Montserrat;
+        }
+
+    form{
+        margin: 3rem 0;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    input{
+        padding: 1rem;
+        font-size: medium;
+    }
+    button{
+        border-radius: 0.7rem;
+        background-color: chocolate;
+        color: aliceblue;
+        padding: 1rem;
+    }
+</style>

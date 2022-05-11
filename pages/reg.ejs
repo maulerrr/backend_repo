@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static/js/reg.js"></script>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/aos.css">
+    <link rel="stylesheet" href="static/css/tooplate-gymso-style.css">
+    <title>Registration page</title>
+</head>
+<body  data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="index">Atlas</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="index" class="nav-link smoothScroll">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about" class="nav-link smoothScroll">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="workpage" class="nav-link smoothScroll">Workout</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="login" class="nav-link smoothScroll">Login</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="reg" class="nav-link smoothScroll">Register</a>
+                    </li>
+            
+                </ul>
+
+                </ul> -->
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="containerl">  
+        <h1 style="font-size: large;">Register</h1>  
+        <form action="reg" id="form" class="form" method="post">
+         <div class="input">
+          <label for="username">Username</label>  
+          <input  
+           type="text"  
+           name="username"  
+           id="username"  
+           placeholder="Username"  
+           autocomplete="off"  
+          /> 
+          <small>Error message</small>  
+         </div>  
+         <div class="input">  
+          <label for="email">Email</label>  
+          <input  
+           type="text"  
+           name="email"  
+           id="email"  
+           placeholder="Email"  
+           autocomplete="off"  
+          />  
+          <small>Error message</small>  
+         </div>  
+         <div class="input">  
+          <label for="password">Password</label>  
+          <input  
+           type="password"  
+           name="password"  
+           id="password"  
+           placeholder="Password"  
+          />  
+          <small>Error message</small>  
+         </div>  
+         <div class="input">  
+          <label for="c-password">Confirmer Password</label>  
+          <input  
+           type="password"  
+           name="c-password"  
+           id="c-password"  
+           placeholder="Confirmer Password"  
+          />  
+          <small>Error message</small>  
+         </div>  
+         <button type="submit">Submit</button>
+        </form>  
+       </div>  
+</body>
+</html>
+<style>
+     * {  
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+  outline: none;  
+ }  
+ body {  
+  background-color: #f13a11;  
+  font-family: "Open Sans", sans-serif;  
+  height: 100vh;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+ }  
+ .containerl {  
+  background-color: #fff;  
+  border-radius: 5px;  
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);  
+  width: 400px;  
+  padding: 30px 40px;  
+ }  
+ .container h1 {  
+  text-align: center;  
+  margin: 0 0 20px;  
+  font-size: 24px;  
+ }  
+ .input {  
+  margin-bottom: 20px;  
+  position: relative;  
+ }  
+ .input label {  
+  display: block;  
+  margin-bottom: 10px;  
+ }  
+ .input input {  
+  width: 100%;  
+  height: 40px;  
+  padding: 0 15px;  
+  background-color: transparent;  
+  border: 2px solid #f0f0f0;  
+  border-radius: 5px;  
+ }  
+ .input small {  
+  display: block;  
+  color: #e74c3c;  
+  font-weight: bold;  
+  font-size: 11px;  
+  padding-top: 3px;  
+  visibility: hidden;  
+ }  
+ .input.success input {  
+  border: 2px solid #2ecc71;  
+ }  
+ .input.error input {  
+  border: 2px solid #e74c3c;  
+ }  
+ .input.error small {  
+  visibility: visible;  
+ }  
+ button {  
+  width: 100%;  
+  height: 40px;  
+  line-height: 40px;  
+  background-color: #f13a11;  
+  border: 1px solid #f13a11;  
+  border-radius: 5px;  
+  cursor: pointer;  
+  color: #fff;  
+  display: block;  
+  font-size: 16px;  
+ }  
+</style>

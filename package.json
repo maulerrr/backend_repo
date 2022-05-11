@@ -33,9 +33,9 @@
   "author": "raptor and solomon",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maulerrr/backend_repo"
+    "url": "https://github.com/maulerrr/backend_repo.issues"
   },
-  "homepage": "https://github.com/AlexanderLukashuk/Sanya-Rama_GymsoFitness#readme",
+  "homepage": "https://github.com/maulerrr/backend_repo#readme",
   "devDependencies": {
     "nodemon": "^2.0.16"
   },

@@ -21,7 +21,7 @@ app.use(express.json())
 
 
 try {
-    await mongoose.connect(uri);
+    mongoose.connect(uri);
 
     app.use("/", require("./routers/index"))
     app.use("/", require("./routers/about"))

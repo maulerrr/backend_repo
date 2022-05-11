@@ -10,5 +10,5 @@ const {check} = require("express-validator");
 router
     .route('/reg')
     .get((req, res) => res.render(path.resolve("pages/reg.ejs")))
-    .post(authCtrl.registration)
+    // .post(authCtrl.registration)
 module.exports = router;

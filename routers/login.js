@@ -9,5 +9,5 @@ router
     .route("/login")
     .get((req, res) => res.render(path.resolve("pages/login.ejs")))
     // .post((req, res) => res.render(path.resolve("pages/login.ejs")))
-    .post(controller.login);
+    // .post(controller.login);
 module.exports = router;

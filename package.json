@@ -1,5 +1,7 @@
 {
-  "engines": {},
+  "engines": {
+    "node" : "16.x"
+  },
   "dependencies": {
     "axios": "^0.26.1",
     "bcrypt": "^5.0.1",
@@ -18,12 +20,12 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexanderLukashuk/Sanya-Rama_GymsoFitness.git"
+    "url": "git+https://github.com/maulerrr/backend_repo.git"
   },
   "keywords": [
     "buddy"
@@ -31,7 +33,7 @@
   "author": "raptor and solomon",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlexanderLukashuk/Sanya-Rama_GymsoFitness/issues"
+    "url": "https://github.com/maulerrr/backend_repo"
   },
   "homepage": "https://github.com/AlexanderLukashuk/Sanya-Rama_GymsoFitness#readme",
   "devDependencies": {

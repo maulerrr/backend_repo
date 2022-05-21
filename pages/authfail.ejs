@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something went wrong!</title>
+</head>
+<body>
+    <div class="error">
+        <h1 class="fail">Something went wrong!</h1>
+        <div class="btns">
+            <form class="child-div" action="index" method="get">
+                <p>Return to main page</p>
+                <button type="submit" href="index" action="index" onclick="">Okay</button>
+            </form>
+            <form class="child-div" action="login" method="get">
+                <p>Try to log in!</p>
+                <button type="submit" href="login" name="logIn" onclick="">Log In</button>
+            </form>
+            <form class="child-div" action="reg" method="get">
+                <p>Don't have an account? Register!</p>
+                <button href="reg" action="reg" name="register" method="get" onclick="">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    .error{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    *{
+        font-family: Montserrat;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fail{
+        font-size: 5rem;
+        font-weight: 200;
+    }
+
+    button:hover{
+        transform: scale(1.08);
+        animation-duration: 600ms;
+
+    }
+    button{
+        background-color: rgba(223, 112, 112, 0.24);
+        color: black;
+        font-weight: 300;
+        font-size: 2rem;
+        padding: 1rem 3rem;
+        border-radius: 0%;
+    }
+    .btns{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .child-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+</style>

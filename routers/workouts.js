@@ -53,17 +53,20 @@ router
             target3: daily3[2].target
         })
     })
-    .post((req, res) => res.render(path.resolve("workout pages/cardio.ejs")));
+    // .post((req, res) => res.render(path.resolve("workout pages/cardio.ejs")));
+    // .post((req, res) => res.render(path.resolve("pages/authfail.ejs")));
 module.exports = router;
 
 router
     .route("/massgain")
-    .get((req, res) => res.render(path.resolve("workout pages/massgain.ejs")))
-    .post((req, res) => res.render(path.resolve("workout pages/massgain.ejs")));
+    // .get((req, res) => res.render(path.resolve("workout pages/massgain.ejs")))
+    .get((req, res) => res.render(path.resolve("pages/authfail.ejs")))
+    // .post((req, res) => res.render(path.resolve("workout pages/massgain.ejs")));
 module.exports = router;
 
 router
     .route("/weightloss")
-    .get((req, res) => res.render(path.resolve("workout pages/weightloss.ejs")))
-    .post((req, res) => res.render(path.resolve("workout pages/weightloss.ejs")));
+    // .get((req, res) => res.render(path.resolve("workout pages/weightloss.ejs")))
+    .get((req, res) => res.render(path.resolve("pages/authfail.ejs")))
+    // .post((req, res) => res.render(path.resolve("workout pages/weightloss.ejs")));
 module.exports = router;

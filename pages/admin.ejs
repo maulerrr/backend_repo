@@ -11,11 +11,11 @@
         <button type="submit">Get all users</button>
         <div name="results"></div>
     </form>
-    <form action="deleteUser" method="post">
+    <form action="deleteUser?_method=DELETE" method="post">
         <input type="text" name="userData" id="userData" placeholder="User Identificator">
         <button type="submit">Delete</button>
     </form>
-    <form action="updateUser" method="post">
+    <form action="updateUser?_method=PATCH" method="post">
         <input type="text" name="selectUser" id="selectUser" placeholder="Old Data">
         <input type="text" name="newData" id="newData" placeholder="New Data">
         <button type="submit">Update</button>

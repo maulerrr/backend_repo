@@ -41,12 +41,12 @@ try {
     app.use("/", require("./routers/reg"))
     app.use("/", require("./routers/adminRouter"))
     app.use("/", require("./routers/fail"))
-    // app.use("/", require("./routers/workouts"))
+    app.use("/", require("./routers/workouts"))
 
     app.use("/", require("./routers/accessed/about"))
     app.use("/", require("./routers/accessed/index"))
     app.use("/", require("./routers/accessed/workpage"))
-    // app.use("/", require("./routers/accessed/workouts"))
+    app.use("/", require("./routers/accessed/workouts"))
 
     app.use('/', require('./routers/google'))
 

@@ -82,20 +82,27 @@
           <small>Error message</small>  
          </div>   
          <button type="submit">Submit</button>
-        </form>  
+        </form>
+
+        <form class="for-google" action="google" method="get">
+            <p>Or sign using Google Account</p>
+            <button type="submit" name="google" id="google">Google <img src="static/images/icons8-google-24.png" alt="google"></button>
+        </form>
        </div>
-
-        <% if(typeof error!="undefined" && error){ %>
-        <div class="fail">
-            <p><%= errorMessage%></p>
-        </div>
-        <% } %>
-
 </body>
 </html>
 <style>
-    .fail{
-
+    .for-google img{
+        block-size: 22px;
+        margin-bottom: 4px;
+    }
+    #google{
+        background-color: black;
+    }
+    .for-google p {
+        padding: 1rem 0;
+        margin-bottom: 0 !important;
+        font-size: medium;
     }
     .fail{
         background-color: rgba(255,0,34,0.73);

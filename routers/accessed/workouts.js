@@ -4,7 +4,7 @@ const path = require("path");
 
 const axios = require("axios");
 const {body} = require("express-validator");
-
+const accessMid = require('../../middleware/access')
 
 const options = {
     method: 'GET',
@@ -34,7 +34,7 @@ axios.request(options).then(function (response) {
 
 router
     .route("/cardio_accessed")
-    .get((req, res) => {
+    .get(accessMid, (req, res) => {
         res.render(path.resolve("pages/accessed/workout pages/cardio.ejs"), {
             exerciseName: daily9[0].name,
             gif: daily9[0].gifUrl,
@@ -59,7 +59,7 @@ module.exports = router;
 
 router
     .route("/massgain_accessed")
-    .get((req, res) => {
+    .get(accessMid, (req, res) => {
             res.render(path.resolve("pages/accessed/workout pages/massgain.ejs"), {
                 exerciseName4: daily9[3].name,
                 gif4: daily9[3].gifUrl,
@@ -84,7 +84,7 @@ module.exports = router;
 
 router
     .route("/weightloss_accessed")
-    .get((req, res) => {
+    .get(accessMid, (req, res) => {
         res.render(path.resolve("pages/accessed/workout pages/weightloss.ejs"), {
             exerciseName7: daily9[6].name,
             gif7: daily9[6].gifUrl,

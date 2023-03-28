@@ -24,7 +24,7 @@ passport.deserializeUser((user, done)=>{
 passport.use(new GoogleStrategy({
         clientID: "193759398954-cm1fa4rm0j6j9jnlqi147hlnvmdkt8i3.apps.googleusercontent.com",
         clientSecret: "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",
-        callbackURL: "http://polar-cliffs-65336.herokuapp.com/google/callback"
+        callbackURL: "http://backend-repo-delta.vercel.app/google/callback"
     },
     function(accessToken, refreshToken, profile, cb) {
         UserGoogleModel.findOrCreate({ googleId: profile.id }, function (err, user) {
